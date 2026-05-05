@@ -558,7 +558,7 @@ export default function WinnerCreativePremium() {
               <div className="w-8 h-8 rounded-xl bg-amber-500 flex items-center justify-center text-black font-bold">W</div>
               <span className="text-3xl font-black tracking-tighter">Winner<span className="text-amber-500">creativeads</span>.</span>
             </div>
-            <p className="text-slate-500 text-xs font-bold tracking-[0.2em] uppercase">Est. 2026 // Jalalpur Pirwala</p>
+            <p className="text-slate-500 text-xs font-bold tracking-[0.2em] uppercase">Est. 2026 // Worldwide</p>
           </div>
          
           <div className="flex flex-col sm:flex-row gap-6 md:gap-10 text-sm font-bold tracking-widest uppercase">
