@@ -274,8 +274,6 @@ export default function WinnerCreativePremium() {
         </div>
       </section>
 
-      <TestimonialsSection />
-
       {/* --- INFINITE MARQUEE --- */}
 
       <div className="border-y border-white/5 bg-black/40 backdrop-blur-md py-6 overflow-hidden relative">
@@ -552,7 +550,7 @@ export default function WinnerCreativePremium() {
            </div>
          </div>
       </section>
-
+<TestimonialsSection />
       {/* --- PREMIUM FOOTER --- */}
       <footer className="py-24 border-t border-white/10 bg-[#020202] text-center relative overflow-hidden">
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-amber-500/5 blur-[150px] pointer-events-none"></div>
