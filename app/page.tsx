@@ -7,6 +7,8 @@ import {
   Menu, X, MessageCircle, Mail, Sparkles
 } from 'lucide-react';
 
+import TestimonialsSection from '@/components/TestimonialsSection'
+
 export default function WinnerCreativePremium() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
@@ -272,6 +274,8 @@ export default function WinnerCreativePremium() {
         </div>
       </section>
 
+              <TestimonialsSection />
+              
       {/* --- INFINITE MARQUEE --- */}
       <div className="border-y border-white/5 bg-black/40 backdrop-blur-md py-6 overflow-hidden relative">
         <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#030303] to-transparent z-10"></div>
