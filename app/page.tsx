@@ -274,9 +274,10 @@ export default function WinnerCreativePremium() {
         </div>
       </section>
 
-              <TestimonialsSection />
-              
+      <TestimonialsSection />
+
       {/* --- INFINITE MARQUEE --- */}
+
       <div className="border-y border-white/5 bg-black/40 backdrop-blur-md py-6 overflow-hidden relative">
         <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#030303] to-transparent z-10"></div>
         <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#030303] to-transparent z-10"></div>
