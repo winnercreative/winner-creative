@@ -10,6 +10,20 @@ import {
 import TestimonialsSection from '@/components/TestimonialsSection'
 
 export default function WinnerCreativePremium() {
+  // GLOBAL WHATSAPP TRACKER
+  React.useEffect(() => {
+    const trackWhatsAppLinks = (e: any) => {
+      const link = e.target.closest('a');
+      // If the clicked link contains "wa.me" or "whatsapp" in the URL
+      if (link && (link.href.includes('wa.me') || link.href.includes('whatsapp'))) {
+        if (typeof window !== 'undefined' && (window as any).fbq) {
+          (window as any).fbq('track', 'Contact');
+        }
+      }
+    };
+    document.addEventListener('click', trackWhatsAppLinks);
+    return () => document.removeEventListener('click', trackWhatsAppLinks);
+  }, []);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
   const [activeVideo, setActiveVideo] = useState<string | null>(null);

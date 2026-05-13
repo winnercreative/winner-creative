@@ -1,4 +1,4 @@
-
+import Script from 'next/script';
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: 'WinnerCreativeAds — High-Converting Video Ads for TikTok & Meta',
+export const metadata: Metadata = {
+  title: 'WinnerCreativeAds - High-Converting Video Ads for TikTok & Meta',
   description: 'Get scroll-stopping video ads for dropshipping in 24 hours. Starting at just $10. Script, voiceover and editing included. 100% money-back guarantee.',
 };
 
@@ -25,6 +25,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/* THIS IS YOUR FACEBOOK BASE PIXEL */}
+      <Script id="facebook-pixel" strategy="afterInteractive">
+        {`
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '2776678569351422');
+          fbq('track', 'PageView');
+        `}
+      </Script>
+
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
